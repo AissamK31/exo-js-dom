@@ -1,0 +1,181 @@
+/* 
+ * FEUILLE DE STYLE DU QUIZ DES DRAPEAUX
+ * Cette feuille définit l'apparence visuelle de l'application
+ */
+
+/* Style global du corps de la page */
+body {
+  font-family: "Arial", sans-serif; /* Police d'écriture utilisée */
+  background-color: #f5f5f5; /* Couleur de fond gris clair */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime les rembourrages par défaut */
+  display: flex; /* Utilise le modèle de mise en page Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  min-height: 100vh; /* Hauteur minimale égale à la hauteur de la fenêtre */
+}
+
+/* Styles communs pour les différents écrans */
+.screen {
+  background-color: white; /* Fond blanc pour les écrans */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 30px; /* Espacement interne */
+  width: 90%; /* Largeur de 90% du parent */
+  max-width: 600px; /* Largeur maximale de 600px */
+  text-align: center; /* Texte centré */
+}
+
+/* Style des formulaires d'authentification */
+.auth-form {
+  margin: 0 auto; /* Centre le formulaire */
+  width: 80%; /* Largeur de 80% du parent */
+}
+
+/* Style des titres principaux */
+h2 {
+  color: #2c3e50; /* Couleur bleu foncé */
+  margin-bottom: 20px; /* Marge en bas */
+}
+
+/* Style des champs de saisie */
+input {
+  display: block; /* Affiche en bloc (un élément par ligne) */
+  width: 100%; /* Largeur totale */
+  padding: 10px; /* Espacement interne */
+  margin: 10px 0; /* Marges verticales */
+  border: 1px solid #ddd; /* Bordure grise fine */
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police */
+}
+
+/* Style des boutons */
+button {
+  background-color: #3498db; /* Fond bleu */
+  color: white; /* Texte blanc */
+  border: none; /* Pas de bordure */
+  padding: 10px 20px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  font-size: 16px; /* Taille de police */
+  margin-top: 10px; /* Marge en haut */
+  transition: background-color 0.3s; /* Animation de changement de couleur */
+}
+
+/* Style des boutons au survol */
+button:hover {
+  background-color: #2980b9; /* Bleu plus foncé au survol */
+}
+
+/* En-tête de l'écran de jeu (timer et score) */
+.game-header {
+  display: flex; /* Disposition flexible */
+  justify-content: space-between; /* Répartit les éléments aux extrémités */
+  margin-bottom: 20px; /* Marge en bas */
+  font-size: 18px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Conteneur du drapeau */
+.flag-container {
+  margin: 20px 0; /* Marges verticales */
+  height: 150px; /* Hauteur fixe */
+  display: flex; /* Disposition flexible */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+/* Style de l'image du drapeau */
+#flag-img {
+  max-height: 100%; /* Hauteur maximale à 100% du conteneur */
+  max-width: 100%; /* Largeur maximale à 100% du conteneur */
+  border: 1px solid #ddd; /* Bordure grise fine */
+}
+
+/* Zone du formulaire de réponse */
+.answer-form {
+  display: flex; /* Disposition flexible */
+  gap: 10px; /* Espace entre les éléments */
+  margin-top: 20px; /* Marge en haut */
+}
+
+/* Champ de saisie du pays */
+#country-input {
+  flex-grow: 1; /* Prend tout l'espace disponible */
+}
+
+/* Zone de feedback après réponse */
+.feedback {
+  margin-top: 20px; /* Marge en haut */
+  min-height: 24px; /* Hauteur minimale */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour les réponses correctes */
+.correct {
+  color: #27ae60; /* Vert */
+}
+
+/* Style pour les réponses incorrectes */
+.incorrect {
+  color: #e74c3c; /* Rouge */
+}
+
+/* Style du tableau de classement */
+#leaderboard {
+  width: 100%; /* Largeur totale */
+  border-collapse: collapse; /* Fusion des bordures */
+  margin: 20px 0; /* Marges verticales */
+}
+
+/* Style des cellules du tableau */
+#leaderboard th,
+#leaderboard td {
+  padding: 10px; /* Espacement interne */
+  border-bottom: 1px solid #ddd; /* Bordure inférieure */
+}
+
+/* Style des en-têtes du tableau */
+#leaderboard th {
+  background-color: #f2f2f2; /* Fond gris clair */
+}
+
+/* Style du bouton "Rejouer" */
+#play-again {
+  background-color: #2ecc71; /* Fond vert */
+  margin-right: 10px; /* Marge à droite */
+}
+
+/* Style du bouton "Rejouer" au survol */
+#play-again:hover {
+  background-color: #27ae60; /* Vert plus foncé au survol */
+}
+
+/* Style du bouton "Déconnexion" */
+#logout-btn {
+  background-color: #e74c3c; /* Fond rouge */
+}
+
+/* Style du bouton "Déconnexion" au survol */
+#logout-btn:hover {
+  background-color: #c0392b; /* Rouge plus foncé au survol */
+}
+
+/* Style du timer en alerte (quand il reste peu de temps) */
+.timer.warning {
+  color: #e74c3c; /* Rouge */
+  animation: pulse 1s infinite; /* Animation clignotante */
+}
+
+/* Définition de l'animation "pulse" */
+@keyframes pulse {
+  0% {
+    opacity: 1; /* Opacité totale */
+  }
+  50% {
+    opacity: 0.5; /* Semi-transparent */
+  }
+  100% {
+    opacity: 1; /* Retour à l'opacité totale */
+  }
+}

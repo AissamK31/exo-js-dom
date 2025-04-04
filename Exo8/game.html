@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Métadonnées de la page -->
+    <meta charset="UTF-8" />
+    <!-- Définit l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configuration pour les appareils mobiles -->
+    <title>Quiz des Drapeaux</title>
+    <!-- Titre de l'onglet du navigateur -->
+    <link rel="stylesheet" href="game.css" />
+    <!-- Lien vers la feuille de style CSS -->
+  </head>
+  <body>
+    <!-- Conteneur principal de l'application -->
+    <div id="app">
+      <!-- ÉCRAN 1: Authentification (visible par défaut) -->
+      <div id="auth-screen" class="screen">
+        <!-- Formulaire de connexion (visible par défaut) -->
+        <div class="auth-form">
+          <h2>Connexion</h2>
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Nom d'utilisateur"
+          />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Mot de passe"
+          />
+          <button id="login-btn">Se connecter</button>
+          <p>
+            Pas encore de compte? <a href="#" id="show-register">S'inscrire</a>
+          </p>
+        </div>
+
+        <!-- Formulaire d'inscription (caché par défaut) -->
+        <div class="auth-form" style="display: none">
+          <h2>Inscription</h2>
+          <input
+            type="text"
+            id="register-username"
+            placeholder="Nom d'utilisateur"
+          />
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Mot de passe"
+          />
+          <button id="register-btn">S'inscrire</button>
+          <p>Déjà un compte? <a href="#" id="show-login">Se connecter</a></p>
+        </div>
+      </div>
+
+      <!-- ÉCRAN 2: Jeu (caché par défaut) -->
+      <div id="game-screen" class="screen" style="display: none">
+        <!-- En-tête avec informations de jeu -->
+        <div class="game-header">
+          <div class="timer">Temps: <span id="time">20</span>s</div>
+          <!-- Compte à rebours -->
+          <div class="score">Score: <span id="current-score">0</span>/10</div>
+          <!-- Score actuel -->
+        </div>
+
+        <!-- Zone d'affichage du drapeau -->
+        <div class="flag-container">
+          <img id="flag-img" src="" alt="Drapeau du pays à deviner" />
+        </div>
+
+        <!-- Zone de réponse -->
+        <div class="answer-form">
+          <input type="text" id="country-input" placeholder="Nom du pays" />
+          <button id="submit-answer">Valider</button>
+        </div>
+
+        <!-- Zone de feedback après réponse -->
+        <div id="feedback" class="feedback"></div>
+      </div>
+
+      <!-- ÉCRAN 3: Résultats (caché par défaut) -->
+      <div id="results-screen" class="screen" style="display: none">
+        <h2>Résultats</h2>
+        <p>Votre score: <span id="final-score">0</span>/10</p>
+
+        <!-- Tableau des meilleurs scores -->
+        <h3>Classement</h3>
+        <table id="leaderboard">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Joueur</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body">
+            <!-- Les scores seront ajoutés ici dynamiquement par JavaScript -->
+          </tbody>
+        </table>
+
+        <!-- Boutons d'action -->
+        <button id="play-again">Rejouer</button>
+        <button id="logout-btn">Déconnexion</button>
+      </div>
+    </div>
+
+    <!-- Chargement du script JavaScript -->
+    <script src="game.js"></script>
+  </body>
+</html>

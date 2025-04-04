@@ -1,0 +1,18 @@
+/* 
+ * Styles pour la classe "normal" qui est appliquée par défaut au paragraphe
+ * Cette classe définit l'apparence initiale de l'élément dans le DOM
+ */
+.normal {
+  color: black; /* Couleur du texte en noir */
+  font-weight: normal; /* Texte avec épaisseur normale (non gras) */
+}
+
+/* 
+ * Styles pour la classe "bold" qui est ajoutée/supprimée dynamiquement 
+ * par JavaScript via la méthode classList.toggle()
+ * Ces styles sont appliqués uniquement lorsque la classe est présente dans le DOM
+ */
+.bold {
+  color: red; /* Change la couleur du texte en rouge */
+  font-weight: bold; /* Rend le texte en gras */
+}

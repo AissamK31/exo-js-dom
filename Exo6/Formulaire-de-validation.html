@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-
+scale=1.0"
+    />
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="signup" class="form">
+        <h1>S'enregistrer</h1>
+        <div class="form-field error success">
+          <label for="username">Nom : </label>
+          <input type="text" name="username" id="username" autocomplete="off" />
+          <small></small>
+        </div>
+        <div class="form-field error success">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" autocomplete="off" />
+          <small></small>
+        </div>
+        <div class="form-field error success">
+          <label for="password">Mot de passe</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <div class="form-field error success">
+          <label for="confirm-password">Confirmation du mot de passe</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            autocomplete="off"
+          />
+          <small></small>
+        </div>
+        <div class="form-field error success">
+          <input type="submit" value="Sign Up" class="btn" />
+        </div>
+        <div class="form-field" style="text-align: center; margin-top: 10px">
+          <a href="login.html">Déjà inscrit? Se connecter</a>
+        </div>
+      </form>
+    </div>
+    <script src="Main.js"></script>
+  </body>
+</html>

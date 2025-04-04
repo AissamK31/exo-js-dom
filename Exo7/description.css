@@ -1,0 +1,14 @@
+.product-description {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.back-button {
+  margin: 20px 0;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}

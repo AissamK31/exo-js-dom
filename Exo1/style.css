@@ -1,0 +1,11 @@
+/* Style par défaut du body (mode clair) */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Style appliqué lorsque la classe dark-mode est présente */
+.dark-mode {
+  background-color: black;
+  color: white;
+}

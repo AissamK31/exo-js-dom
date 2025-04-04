@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commander - MakersBrico</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="commande.css" />
+  </head>
+  <body>
+    <h1>MakersBrico - Commander votre produit</h1>
+
+    <div class="order-form">
+      <div class="order-summary">
+        <h2>Résumé de votre commande</h2>
+        <p id="product-title">Produit : Chargement...</p>
+        <p id="product-price">Prix : Chargement...</p>
+      </div>
+
+      <h2>Informations de livraison</h2>
+      <form id="order-form">
+        <div>
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div>
+          <label for="address">Adresse</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+
+        <div>
+          <label for="city">Ville</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+
+        <div>
+          <label for="postal-code">Code postal</label>
+          <input type="text" id="postal-code" name="postal-code" required />
+        </div>
+
+        <div>
+          <label for="payment-method">Méthode de paiement</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="">Sélectionnez une méthode de paiement</option>
+            <option value="carte">Carte bancaire</option>
+            <option value="paypal">PayPal</option>
+            <option value="virement">Virement bancaire</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-button">
+          Confirmer la commande
+        </button>
+      </form>
+
+      <button class="back-button" onclick="window.location.href='produit.html'">
+        Retour aux produits
+      </button>
+    </div>
+
+    <script src="commande.js"></script>
+  </body>
+</html>

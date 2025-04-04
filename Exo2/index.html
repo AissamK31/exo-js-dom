@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Lien vers la feuille de style qui définit l'apparence des éléments du DOM -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 
+      Élément div avec l'ID "container" qui sera sélectionné dans JavaScript
+      Cet ID sert de point d'accès pour le script JavaScript via document.getElementById()
+      Tous les éléments à l'intérieur font partie du DOM et peuvent être manipulés
+    -->
+    <div id="container">
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+      </p>
+    </div>
+
+    <!-- 
+      Script JavaScript placé à la fin du body
+      Cette position assure que tout le DOM est chargé avant que le script ne s'exécute
+      Le script contient la logique pour manipuler les éléments du DOM
+    -->
+    <script src="main.js"></script>
+  </body>
+</html>

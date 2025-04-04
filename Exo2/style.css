@@ -1,0 +1,21 @@
+/* 
+ * Style pour l'élément avec l'ID "container"
+ * Sélecteur ID (#) qui cible précisément l'élément HTML avec id="container"
+ * Ces styles s'appliquent à l'état initial de l'élément dans le DOM
+ */
+#container {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer; /* Change le curseur pour indiquer que l'élément est cliquable */
+}
+
+/* 
+ * Style pour les éléments ayant la classe "mode-actif"
+ * Cette classe est ajoutée/supprimée dynamiquement par JavaScript via classList.toggle()
+ * Ces styles s'appliquent uniquement quand la classe est présente dans le DOM
+ */
+.mode-actif {
+  background-color: black;
+  color: white;
+}

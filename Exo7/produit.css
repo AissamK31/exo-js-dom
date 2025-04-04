@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+hr {
+  width: 100px;
+  color: #3498db;
+  margin: 30px 0px;
+}
+
+.services {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.section-title {
+  color: #3498db;
+}
+
+.block-service {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  height: 460px;
+  width: 350px;
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 12px 12px 2px 1px #2c3e50;
+  border: 0.5px solid #2c3e50;
+}
+
+.img-card {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  border: 0.5px solid #2c3e50;
+}
+
+.card h3 {
+  font-size: 28px;
+}
+
+.card p {
+  color: #3498db;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.pavage {
+  background: url("https://media.rs-online.com/image/upload/bo_1.5px_solid_white,b_auto,c_pad,dpr_2,f_auto,h_399,q_auto,w_710/c_pad,h_399,w_710/Y6850766-01?pgw=1");
+  background-size: cover;
+}
+
+.cloture {
+  background: url("https://www.tunisianet.com.tn/38636-large/perceuse-a-percussion-metabo-sbe-710.jpg");
+  background-size: cover;
+}
+
+.menuiserie {
+  background: url("https://www.univers-du-pro.com/38179-large_default/3165140519267.jpg");
+  background-size: cover;
+}
+
+.macon {
+  background: url("https://www.provence-outillage.fr/data/images/perceuse-percussion-950w-powerplus-a-12823_800x800.webp");
+  background-size: cover;
+}
+
+.txt {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  font-size: 18px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border-radius: 15px 15px 0px 0px;
+}
+.txt p {
+  width: 80%;
+  text-align: justify;
+}
+
+.prix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

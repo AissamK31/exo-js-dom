@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de bord</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .dashboard-container {
+        width: 800px;
+        max-width: 90%;
+      }
+      .user-info {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        border-left: 4px solid #007bff;
+      }
+      .user-info h2 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .user-info p {
+        margin: 5px 0;
+        color: #666;
+      }
+      .logout-btn {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .logout-btn:hover {
+        background-color: #c82333;
+      }
+      .auth-required {
+        text-align: center;
+        color: #dc3545;
+        font-weight: bold;
+        margin: 50px 0;
+      }
+      .login-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #007bff;
+        text-decoration: none;
+      }
+      .login-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container dashboard-container">
+      <div id="auth-content">
+        <!-- Contenu protégé - visible uniquement si l'utilisateur est connecté -->
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
